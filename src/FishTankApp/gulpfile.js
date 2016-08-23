@@ -41,7 +41,7 @@ gulp.task("copy:js", function() {
 
 gulp.task("min:css", function() {
 	return gulp.src([paths.bootstrapCss, paths.fontAwesomeCss, paths.morrisCss])
-		.pipe(concat(paths.jsDest + "/min/site.min.css"))
+		.pipe(concat(paths.cssDest + "/min/site.min.css"))
 		.pipe(cssmin())
 		.pipe(gulp.dest("."));
 });
